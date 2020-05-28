@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //user recursion to implement a countdown counter
+        //recursive function need to have breaking condition-prevent INFINITE
+        function countdown(x){
+            if (x==0){                      //x== 0 je false, code in else block will be executed
+                console.log('done');
+                return                    //when number get 'zero', return statement will be executed
+            }else{
+                console.log(x,' ...');
+                countdown(x-1);
+                console.log("???");//return/print 5-tmes until we get top of the call stack
+
+            }
+
+        }
+        countdown(5);
+    </script>
+</body>
+</html>
