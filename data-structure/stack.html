@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var letters = [];// this is our stack
+        var word = "black";  //"racecar" is palindrome
+        var rword="";
+//put letters of word into stack
+for (var i = 0; i < word.length; i++){
+    letters.push(word[i]);
+}
+
+//pop off the stack in reverse order
+for (var i = 0; i < word.length; i++){
+    rword+=letters.pop();
+}
+if (rword === word){
+    console.log(word + " is palindrome.");
+}
+else{
+    console.log(word + " is not palindrome");
+}
+
+    </script>
+</body>
+</html>
