@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+        function addFavoriteBook(bookname){  //define addFavoriteBook() function that receives a single parameter, called `bookname`
+if(!bookname.includes("Great")){ //if string `bookname` does NOT have the word "Greate" in it, add it to the `favoriteBooks` array
+ 
+    favoriteBooks.push(bookname);
+}
+        };
+        function printFavoriteBook(){
+            console.log(`Favorite books:${favoriteBooks.length}`);
+            for (let book of favoriteBooks){
+         console.log(book);
+        
+        }
+        }
+        let favoriteBooks=[];
+addFavoriteBook("A Song of Ice and Fire");
+addFavoriteBook("The Great Gatsby");
+addFavoriteBook("Crime & Punishment");
+addFavoriteBook("Great Expectations");
+addFavoriteBook("You Don't Know JS");
+printFavoriteBook();
+    </script>
+</body>
+</html>
